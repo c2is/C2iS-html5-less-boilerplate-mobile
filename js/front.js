@@ -12,9 +12,9 @@ $(function() { //domReady
     consoleLog('Execution front.js : ok');
 
 // Test html5 form capacties andif do polyfills
-    if(!Modernizr.input.placeholder){ //ie. placeholder
+    /*if(!Modernizr.input.placeholder){ //ie. placeholder
         polyfillPlaceholder();
-    }
+    }*/
 
 // Gestion du click sur le parent
     if( $('.linkParent').length > 0 ) {
@@ -42,7 +42,7 @@ $(function() { //domReady
  *
  * */
  
-// gestion des différentes valeurs css3 dépendantes du userAgent (transition, transform, animation,...)
+// gestion des diffï¿½rentes valeurs css3 dï¿½pendantes du userAgent (transition, transform, animation,...)
 var transEndEventName = getUserAgentElementName('transEndEventName');
 function getUserAgentElementName(sName){ 
     var userAgentElementNames = {
@@ -54,7 +54,7 @@ function getUserAgentElementName(sName){
         }
     }
     var userAgentElementName = {
-        transEndEventName : userAgentElementNames['transEndEventNames'][Modernizr.prefixed('transition') ]
+        //transEndEventName : userAgentElementNames['transEndEventNames'][Modernizr.prefixed('transition') ]
     }
     return userAgentElementName[sName];
 }
@@ -62,7 +62,7 @@ function getUserAgentElementName(sName){
 
 
 
-// Gestion du console.log (évite le bug sur ie si la console n'est pas ouverte)
+// Gestion du console.log (ï¿½vite le bug sur ie si la console n'est pas ouverte)
 function consoleLog (data) {
     if(window.console && console.log )
         console.log(data);
@@ -172,7 +172,7 @@ function scrollTo(sTarget,iSpeed){ // animated scroll
         return newArray;
     }
 
-})(jQuery);
+});
 
 
 /**
@@ -235,7 +235,7 @@ function scrollTo(sTarget,iSpeed){ // animated scroll
         }
     };
 
-})(jQuery);
+});
 
 /*
  * jQuery Extra Selectors - (c) Keith Clark freely distributable under the terms of the MIT license.
@@ -310,7 +310,7 @@ function scrollTo(sTarget,iSpeed){ // animated scroll
         }
     }
     $.extend($.expr[':'], pseudos);
-}(jQuery));
+});
 
 
 

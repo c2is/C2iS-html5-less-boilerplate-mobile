@@ -14,6 +14,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link rel="stylesheet" href="../components/normalize/normalize.css">
+    <link rel="stylesheet" href="../components/ratchet/dist/ratchet.css">
     <link rel="stylesheet" href="../css/screen.css">
 </head>
 <body>

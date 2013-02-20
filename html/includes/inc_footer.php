@@ -1,3 +1,4 @@
+	<script src="../js/all.min.js"></script>
 	<script src="../js/front.js"></script>
 
 	<!-- Prompt IE 6 users to install Chrome Frame -->
