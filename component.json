@@ -4,6 +4,8 @@
 	"dependencies": {
 		"c2is-less": "http://github.com/c2is/c2is-less-component.git",
         "normalize": "https://github.com/necolas/normalize.css.git",
+        "modernizr": "https://raw.github.com/josh/sprockets-modernizr/2.6.2/modernizr.js",
+        "jquery": "latest",
         "ratchet": "ratchet"
 	}
 }

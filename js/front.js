@@ -12,9 +12,9 @@ $(function() { //domReady
     consoleLog('Execution front.js : ok');
 
 // Test html5 form capacties andif do polyfills
-    /*if(!Modernizr.input.placeholder){ //ie. placeholder
+    if(!Modernizr.input.placeholder){ //ie. placeholder
         polyfillPlaceholder();
-    }*/
+    }
 
 // Gestion du click sur le parent
     if( $('.linkParent').length > 0 ) {
@@ -54,7 +54,7 @@ function getUserAgentElementName(sName){
         }
     }
     var userAgentElementName = {
-        //transEndEventName : userAgentElementNames['transEndEventNames'][Modernizr.prefixed('transition') ]
+        transEndEventName : userAgentElementNames['transEndEventNames'][Modernizr.prefixed('transition') ]
     }
     return userAgentElementName[sName];
 }
@@ -94,7 +94,7 @@ function polyfillPlaceholder(){
 
 
 function scrollTo(sTarget,iSpeed){ // animated scroll
-    var sTarget = sTarget != undefined ? sTarget : '#wrap',
+    var sTarget = sTarget != undefined ? sTarget : 'body',
         iSpeed = iSpeed != undefined ? iSpeed : 500;
 
     $("html, body").stop().animate({scrollTop:$(sTarget).offset().top},iSpeed);
